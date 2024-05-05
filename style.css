@@ -1,0 +1,449 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 45px;
+  padding: 0 4px;
+  background-color: black;
+  z-index: 10000;
+}
+.left-logo {
+  position: absolute;
+  font-size: 20px;
+  color: white;
+  display: none;
+}
+nav ul {
+  display: flex;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li a {
+  display: block;
+  color: #ffff;
+  font-size: 15.5px;
+  text-transform: uppercase;
+  padding: 10px 22px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: black;
+  background-color: #cccccc;
+}
+
+header .header-right {
+  display: flex;
+  align-items: center;
+}
+
+header .login-signup i {
+  display: inline-block;
+  position: absolute;
+  color: #fafbfb;
+  right: 0;
+  top: 0;
+  padding: 14px 25px;
+}
+
+header .login-signup i:hover {
+  background: red;
+}
+
+header .header-right .hamburger i {
+  position: absolute;
+  color: white;
+  right: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+#Home {
+  /* height: 100vh; */
+  top: 45px;
+  position: relative;
+}
+
+.testimonial-container img {
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.testimonial-container .city-name {
+  position: absolute;
+  bottom: 9px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  line-height: 2;
+  color: white;
+}
+
+.testimonial-container h4 {
+  font-size: 20px;
+}
+
+#Band {
+  max-width: 800px;
+  margin-top: 120px;
+  margin-bottom: 100px;
+  margin-inline: auto;
+}
+
+#Band .band-container {
+  position: relative;
+}
+
+.band-container h1 {
+  font-size: 35px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 75px 15px 0;
+}
+
+.band-container p {
+  margin: 15px;
+  text-align: center;
+}
+
+.band-container p em {
+  opacity: 0.5;
+}
+
+.band-container .paragh {
+  text-align: justify;
+  line-height: 1.3;
+}
+
+.band-container .band-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.band-box .band-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.band-box .band-name {
+  width: 100%;
+}
+
+.band-box img {
+  width: 70%;
+  border-radius: 8px;
+}
+
+#Tour {
+  background-color: black;
+  color: #fafbfb;
+  padding-bottom: 80px;
+}
+
+#Tour .tour-countainer {
+  max-width: 800px;
+  position: relative;
+  margin-inline: auto;
+  padding-top: 73px;
+}
+
+.tour-countainer h1 {
+  text-align: center;
+  font-size: 30px;
+  padding: 6px;
+  margin-bottom: 15px;
+}
+
+.tour-countainer p {
+  text-align: center;
+}
+.tour-countainer p em {
+  opacity: 0.5;
+  font-size: 15px;
+}
+
+.tour-countainer .month {
+  margin-top: 40px;
+  list-style: none;
+  background-color: #ffff;
+  color: gray;
+}
+
+.tour-countainer .month li {
+  border: 1px solid #cccccc;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.tour-countainer .month li span {
+  background-color: red;
+  padding: 3px;
+  font-size: 15px;
+  margin-left: 10px;
+  color: white;
+  font-weight: 500;
+}
+
+.month li:nth-child(3) span {
+  float: right;
+  background-color: black;
+  margin-right: 20px;
+  width: 23px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.city-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.city-box-model {
+  flex: 1;
+  background-color: white;
+  max-width: calc(33.33% - 20px);
+}
+
+.city-box-model img {
+  width: 100%;
+  transition: filter 0.3s ease;
+}
+
+.city-box-model img:hover {
+  filter: brightness(70%);
+}
+
+.city-data {
+  margin: 10px;
+}
+
+.city-box-model .city-data h4 {
+  color: black;
+  margin-top: 10px;
+}
+
+.city-data .city-date {
+  opacity: 0.5;
+  color: black;
+  text-align: start;
+  line-height: 3;
+}
+
+.city-box-model .city-data .data-paragh {
+  color: black;
+  text-align: start;
+  line-height: 1.5;
+}
+
+.city-data #tickets-btn {
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  background-color: black;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.city-data #tickets-btn:hover {
+  background-color: #cccccc;
+  color: black;
+}
+
+#Contact {
+  padding-top: 75px;
+  padding-bottom: 120px;
+}
+
+#Contact .contact-container {
+  max-width: 800px;
+  position: relative;
+  margin-inline: auto;
+}
+
+.contact-container h1 {
+  text-align: center;
+  font-size: 29px;
+  font-weight: 100;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.contact-container .contact-note {
+  text-align: center;
+  margin: 16px 0px 16px;
+  padding: 2px 0 2px;
+  opacity: 0.4;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.contact-box {
+  width: 80%;
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 19px;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-info li {
+  list-style: none;
+}
+
+.form-input {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.form-control {
+  width: calc(50% - 5px); /* Adjust width as needed */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.form-control::placeholder {
+  color: #999;
+}
+
+.form-input input:nth-last-child(2) {
+  width: 100%;
+}
+
+input[type="submit"] {
+  width: 20%;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.form-control[type="submit"]:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+img {
+  width: 100%;
+}
+
+.footer {
+  text-align: center;
+  font-size: 23px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  margin-top: 50px;
+  color: #666;
+}
+
+.footer .copyright {
+  font-size: 14px;
+  color: #666;
+  margin: 10px 0 40px;
+}
+
+@media screen and (max-width: 600px) {
+  .login-signup {
+    display: none;
+  }
+
+  .left-logo {
+    display: block;
+    padding: 5px;
+  }
+
+  header .header-right .hamburger i {
+    right: 20px;
+    bottom: 15px;
+    display: block;
+  }
+
+  nav {
+    margin: 0;
+    position: absolute;
+    top: -500%;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+    background-color: #0b2239;
+    padding: 0px;
+    transition: 0.3s;
+    z-index: 3;
+  }
+  nav a {
+    z-index: 2;
+  }
+  nav.active {
+    top: 0px;
+  }
+
+  header nav ul {
+    display: block;
+  }
+
+  .username,
+  .text {
+    display: none;
+  }
+
+  .band-container .band-box {
+    display: block;
+  }
+
+  .city-container {
+    display: block;
+  }
+
+  .city-box-model {
+    max-width: calc(100% - 20px);
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+  }
+
+  form {
+    display: block;
+    padding: 0 15px 0;
+  }
+}
